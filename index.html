@@ -2,14 +2,45 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
+
   <style>
+    .Search {
+      
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    margin-top: -37px;
+    }
+  
+  .under_buttons input[type="under"]:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+  }
+    .under_buttons input[type="under"] {
+    text-align:center;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    color: rgb(95,99,104);
+    font: 400 13.3333px Arial;
+    height: 36px;
+    line-height: 27px;
+    
+  
+}
  img {
    padding: 150px 100px 20px 525px;
  }
  div {
    padding: 0px 100px 20px 525px;
-    
+
     }
 
     ul{
@@ -21,11 +52,11 @@ padding: none;
   </style>
 
    <ul>
-<li><a href="sbout.asp">About</a></li>
-<li><a href="store.asp">Store</a></li>
-<li><a href="gmail.asp">Gmail</a></li>
-<li><a href="images.asp">Images</a></li>
-<li><a href="sign_in.asp">Sign in</a></li>
+<li><a href="sbout.asp" style="float: left;">About</a></li>
+<li><a href="store.asp" style="float: left;">Store</a></li>
+<li><a href="gmail.asp" style="float: right;">Gmail</a></li>
+<li><a href="images.asp" style="float: right;">Images</a></li>
+<li><a href="sign_in.asp" style="float: right;">Sign in</a></li>
  </ul>
 
 </head>
@@ -35,11 +66,18 @@ padding: none;
 <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
 alt="Google Logo">
 
-<div class="Search" id="Search">
- <input type="text" placeholder="Search..">
-  </div>
+<div class="Search" >
+  <input type="text" placeholder="Search..">
+   </div>
   
-
+<div class="under_buttons">
+  <ul>
+    <li><input class="google_search.asp" type="under" value="Google Search" 
+      style="float:left" ></input></li>
+  <li><input class="feeling_lucky.asp" type="under" value="I'm Feeling Lucky"
+     style="float:left" ></input></li>
+  </ul>
+</div>
 
 </body>
 
